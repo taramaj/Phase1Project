@@ -1,3 +1,171 @@
-header, ul, section, footer {
-    display: flex;
+* {
+    padding: 0;
+    margin: 0;
 }
+
+.first, .second, .nav, .homepics, section, footer {
+    display: flex;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+}
+
+/*First and Second Page Header*/
+.first, .second {
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+/*Home Header Image*/
+.first {
+    background-image: url("../images/tulips.jpg");
+    background-color: #ffe6ff;
+}
+
+/*History Header Image*/
+.second {
+    background-image: url("../images/redflowerfield.jpg");
+    background-color: #ffbb99;
+}
+
+/*So You Want to... h1*/
+.main {
+    padding: 5px;  
+    border: solid #d3d3d3 2px;
+    background-color: rgba(204, 0, 153, 0.8);
+    color: #FFFFFF;
+    font: bolder 40px 'Roboto', sans-serif;
+}
+
+/*What is... h1*/
+.history {
+    padding:5px 25px;
+    border: solid #d3d3d3 2px;
+    background-color: rgba(204, 82, 0, 0.8);
+    color: #FFFFFF;
+    font: bolder 40px 'Roboto', sans-serif;
+}
+
+
+.nav { 
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 5px;
+    background-image: url("../images/grass.jpg");
+    background-color: #669900;
+}
+
+.nav li {
+    padding: 8px;
+    background-color: rgba(242, 242, 242, 0);
+}
+
+.nav a {
+    text-decoration: none;
+    font: bolder 18px 'Roboto', sans-serif;
+    color: #FFFFFF;
+    padding: 6px;
+}
+
+.nav a:hover {
+	border: 1px solid #FFFFFF;
+	background: rgba(102, 102, 102, .8);
+}
+
+/*Index Gallery*/
+  .homepics {
+      justify-content: space-between;
+      width: 100%;
+      padding-top: 5px;
+    } 
+    
+    .homegal {
+        position: relative;
+        color: #ffffff;
+        font: bolder 30px 'Roboto', sans-serif;
+         /*font-family: 'Lato', sans-serif;*/
+    }
+    
+    .capt {
+        position: absolute;
+        bottom: 7px;
+        width: 100%;
+        background: rgb(102,102,102);
+        background: rgba(102, 102, 102, .8);
+        text-align: center;
+    }
+    
+    
+    /*History Gallery incl all images*/
+    .histsec {
+        display: flex;
+        flex-direction: column;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+    
+    /*Represents each image in History*/
+    .histgal{
+        position: relative;
+        color: #ffffff;
+        font: bolder 30px 'Roboto', sans-serif;
+         /*font-family: 'Lato', sans-serif;*/
+    }
+    
+    /*Represents each caption in History*/
+    .histcapt {
+        position: absolute;
+        bottom: 7px;
+        width: 100%;
+        background: rgb(102,102,102);
+        background: rgba(102, 102, 102, .8);
+        text-align: center;
+    }
+    
+    /*.twochild {}*/
+    /*.onewom {}*/
+    
+    .histext {
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        margin-top: 60px;
+        margin-right: 60px;
+        margin-bottom: 60px;
+        margin-left: 80px;
+        padding: 10px;
+        border: solid grey 2px;
+    }
+    
+    .histcontainer {
+        display: flex;
+        flex-wrap: nowrap;
+        border-collapse: collapse;
+        width: 100%;
+        text-align: left;
+        line-height: 1.8;
+    }
+
+    
+
+
+
+footer {
+    justify-content: center;
+    padding: 8px;
+    background-image: url("../images/grass.jpg");
+    background-color: #669900;
+}
+
+footer a {
+    text-decoration: none;
+    font: bolder 18px 'Roboto', sans-serif;
+    color: #FFFFFF;
+    padding: 6px;
+}
+
+footer a:hover {
+	border: 1px solid #FFFFFF;
+	background: rgba(102, 102, 102, .8);
+}
+

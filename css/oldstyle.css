@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.first, .second, .nav, .homepics, section, footer {
+    display: flex;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+}
+
+/*First and Second Page Header*/
+.first, .second {
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+/*Home Header Image*/
+.first {
+    background-image: url("../images/tulips.jpg");
+    background-color: #ffe6ff;
+}
+
+/*History Header Image*/
+.second {
+    background-image: url("../images/redflowerfield.jpg");
+    background-color: #ffbb99;
+}
+
+/*So You Want to... h1*/
+.main {
+    padding: 5px;  
+    border: solid #d3d3d3 2px;
+    background-color: rgba(204, 0, 153, 0.8);
+    color: #FFFFFF;
+    font: bolder 40px 'Roboto', sans-serif;
+}
+
+/*What is... h1*/
+.history {
+    padding:5px 25px;
+    border: solid #d3d3d3 2px;
+    background-color: rgba(204, 82, 0, 0.8);
+    color: #FFFFFF;
+    font: bolder 40px 'Roboto', sans-serif;
+}
+
+
+.nav { 
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 5px;
+    background-image: url("../images/grass.jpg");
+    background-color: #669900;
+}
+
+.nav li {
+    padding: 8px;
+    background-color: rgba(242, 242, 242, 0);
+}
+
+.nav a {
+    text-decoration: none;
+    font: bolder 18px 'Roboto', sans-serif;
+    color: #FFFFFF;
+    padding: 6px;
+}
+
+.nav a:hover {
+	border: 1px solid #FFFFFF;
+}
+
+/*.homepics {
+    width: 100%;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+}*/
+
+.homepics p {
+    /*color: #404040;
+    font: bolder 18px 'Roboto', sans-serif;*/
+    /*font-family: 'Lato', sans-serif;*/
+}
+
+footer {
+    justify-content: center;
+    padding: 8px;
+    background-image: url("../images/grass.jpg");
+    background-color: #669900;
+}
+
+footer a {
+    text-decoration: none;
+    font: bolder 18px 'Roboto', sans-serif;
+    color: #FFFFFF;
+    padding: 6px;
+}
+
+footer a:hover {
+	border: 1px solid #FFFFFF;
+}
+
