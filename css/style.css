@@ -3,14 +3,16 @@
     margin: 0;
 }
 
-.first, .second, .nav, .homepics, section, footer {
+.first, .second, .third, .nav, footer {
     display: flex;
     flex-wrap: wrap;
     border-collapse: collapse;
 }
 
+
+
 /*First and Second Page Header*/
-.first, .second {
+.first, .second, .third {
     height: 500px;
     justify-content: center;
     align-items: center;
@@ -23,129 +25,275 @@
     background-color: #ffe6ff;
 }
 
+/*So You Want to... h1*/
+.main {
+    padding: 5px;  
+    border: solid #d3d3d3 2px;
+    background-color: rgb(204, 0, 153);
+    background-color: rgba(204, 0, 153, 0.8);
+    color: #ffffff;
+    text-shadow: 3px 3px #4d0039;
+    font: bolder 40px 'Roboto', sans-serif;
+}
+
+
+
 /*History Header Image*/
 .second {
     background-image: url("../images/redflowerfield.jpg");
     background-color: #ffbb99;
 }
 
-/*So You Want to... h1*/
-.main {
-    padding: 5px;  
-    border: solid #d3d3d3 2px;
-    background-color: rgba(204, 0, 153, 0.8);
-    color: #FFFFFF;
-    font: bolder 40px 'Roboto', sans-serif;
-}
-
 /*What is... h1*/
 .history {
     padding:5px 25px;
     border: solid #d3d3d3 2px;
+    background-color: rgb(204, 82, 0);
     background-color: rgba(204, 82, 0, 0.8);
-    color: #FFFFFF;
+    color: #ffffff;
+    text-shadow: 3px 3px #4d1f00;
     font: bolder 40px 'Roboto', sans-serif;
+}
+
+
+
+/*Getting Started Header Image*/
+.third {
+    background-image: url("../images/greenseedlings.jpg");
+    background-color: green;
+}
+
+/*Getting Started h1*/
+.start {
+   padding:5px 35px;
+    border: solid #d3d3d3 2px;
+    background-color: rgb(179, 134, 0);
+    background-color: rgba(179, 134, 0, 0.8);
+    color: #ffffff;
+    text-shadow: 3px 3px #4d1f00;
+    font: bolder 40px 'Roboto', sans-serif; 
 }
 
 
 .nav { 
     list-style-type: none;
     justify-content: space-around;
-    padding: 5px;
+    padding: 8px;
     background-image: url("../images/grass.jpg");
     background-color: #669900;
 }
 
 .nav li {
     padding: 8px;
+    background-color: rgb(242, 242, 242);
     background-color: rgba(242, 242, 242, 0);
 }
 
 .nav a {
     text-decoration: none;
     font: bolder 18px 'Roboto', sans-serif;
-    color: #FFFFFF;
+    color: #ffffff;
+    text-shadow: 2px 2px #003300;
     padding: 6px;
 }
 
 .nav a:hover {
 	border: 1px solid #FFFFFF;
+	background: rgb(102, 102, 102);
 	background: rgba(102, 102, 102, .8);
 }
 
-/*Index Gallery*/
-  .homepics {
-      justify-content: space-between;
-      width: 100%;
-      padding-top: 5px;
+
+
+/*Index Pics in a row */
+  .homepicscontainer {
+      display: flex;
+      /*justify-content: space-between;*/
+      border-collapse: collapse;
+      /*width: 100%;*/
+      padding: 15px;
     } 
     
-    .homegal {
-        position: relative;
+    .homepic1, .homepic2, .homepic3 {
+        width: 100%;
+        height: 333px;
+        background-size: cover;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
         color: #ffffff;
+        text-shadow: 2px 2px #003300;
         font: bolder 30px 'Roboto', sans-serif;
          /*font-family: 'Lato', sans-serif;*/
     }
     
-    .capt {
-        position: absolute;
-        bottom: 7px;
+    .homepic1 {
+        background-image: url("../images/orangeyellowflowers.jpg");
+        margin-right: 15px;
+    }
+    
+    .homepic2 {
+        background-image: url("../images/redchiles.jpeg");
+        margin-right: 15px;
+    }
+    
+    .homepic3 {
+        background-image: url("../images/peachtree.jpg");
+    }
+    
+    .textbeaut, .textspicy, .textsweet {
         width: 100%;
+        color: #ffffff ;
         background: rgb(102,102,102);
         background: rgba(102, 102, 102, .8);
         text-align: center;
+        padding: 10px;
     }
     
     
-    /*History Gallery incl all images*/
-    .histsec {
+
+    
+    /*History Pics: Right side, Left side */
+    .histsec1, .histsec2 {
         display: flex;
         flex-direction: column;
         border-collapse: collapse;
-        padding: 5px;
+        padding: 15px;
     }
     
-    /*Represents each image in History*/
-    .histgal{
-        position: relative;
+    .histgal1, .histgal2, .histgal3, .histgal4 {
+        width: 500px;
+        height: 333px;
+        background-size: cover;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
         color: #ffffff;
+        text-shadow: 2px 2px #003300;
         font: bolder 30px 'Roboto', sans-serif;
-         /*font-family: 'Lato', sans-serif;*/
     }
     
-    /*Represents each caption in History*/
-    .histcapt {
-        position: absolute;
-        bottom: 7px;
+    .histgal1 {
+        background-image: url("../images/younggirlgardenplot.jpg");
+        margin-bottom: 15px;
+    }
+    
+    .histgal2 {
+        background-image: url("../images/tomatobowlhand.jpg");
+    }
+    
+    
+    .histgal3 {
+        background-image: url("../images/twochildplay.jpg");
+        margin-bottom: 15px;
+    }
+    
+    .histgal4 {
+        background-image: url("../images/womanplanting.jpg");
+    }
+    
+    .textdirty, .texthealthy, .textfun, .textnature {
         width: 100%;
+        color: #ffffff ;
         background: rgb(102,102,102);
         background: rgba(102, 102, 102, .8);
         text-align: center;
+        padding: 10px;
     }
-    
-    /*.twochild {}*/
-    /*.onewom {}*/
     
     .histext {
         font-size: 20px;
         font-family: 'Lato', sans-serif;
-        margin-top: 60px;
-        margin-right: 60px;
-        margin-bottom: 60px;
-        margin-left: 80px;
-        padding: 10px;
-        border: solid grey 2px;
+        padding: 60px 15px;
     }
     
     .histcontainer {
         display: flex;
-        flex-wrap: nowrap;
         border-collapse: collapse;
         width: 100%;
         text-align: left;
         line-height: 1.8;
     }
-
+    
+    
+    
+    /*Getting Started Pics: Right side, Left side */
+    .startsec1, .startsec2 {
+        display: flex;
+        flex-direction: column;
+        border-collapse: collapse;
+        padding: 15px;
+    }
+    
+    .startgal1, .startgal2, .startgal3, .startgal4 {
+        width: 500px;
+        height: 333px;
+        background-size: cover;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        color: #ffffff;
+        text-shadow: 2px 2px #003300;
+        font: bolder 30px 'Roboto', sans-serif;
+    }
+    
+    .startgal1 {
+        background-image: url("../images/greenshovelsoil.jpg");
+        margin-bottom: 15px;
+    }
+    
+    .startgal2 {
+        background-image: url("../images/vegetablebasket.jpeg");
+    }
+    
+    
+    .startgal3 {
+        background-image: url("../images/strawberryplantwithgreen.jpg");
+        margin-bottom: 15px;
+    }
+    
+    .startgal4 {
+        background-image: url("../images/handsmallflower.jpg");
+    }
+    
+    .textdig, .texttaste, .textsweet, .textprecious {
+        width: 100%;
+        color: #ffffff ;
+        background: rgb(102,102,102);
+        background: rgba(102, 102, 102, .8);
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .starttext {
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        padding: 60px 15px;
+    }
+    
+    .startcontainer {
+        display: flex;
+        border-collapse: collapse;
+        width: 100%;
+        text-align: left;
+        line-height: 1.8;
+    }
+    
+    a.startlink {
+        text-decoration: none;
+        color: #009933;
+        text-shadow: 2px 2px #003300 .5;
+        padding: 3px;
+    }
+    
+    a.startlink:hover {
+        color: #ffffff;
+        text-shadow: 2px 2px #003300 .5;
+        padding: 3px;
+        background: rgba(102, 102, 102, .7);
+    }
+    
+    
     
 
 
@@ -160,12 +308,13 @@ footer {
 footer a {
     text-decoration: none;
     font: bolder 18px 'Roboto', sans-serif;
-    color: #FFFFFF;
+    color: #ffffff;
+    text-shadow: 2px 2px #003300;
     padding: 6px;
 }
 
 footer a:hover {
-	border: 1px solid #FFFFFF;
+	border: 1px solid #ffffff;
 	background: rgba(102, 102, 102, .8);
 }
 
