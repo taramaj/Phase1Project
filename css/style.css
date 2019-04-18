@@ -516,3 +516,30 @@ footer a:hover {
 	background: rgba(102, 102, 102, .8);
 }
 
+
+
+@media screen and (max-width: 768px) {
+    
+  .homepicscontainer, .histcontainer, .startcontainer, .growcontainer, .rescontainer {
+    flex-direction: column;
+  }
+  .homepic1, .homepic2, .homepic3 {
+      width: 100%;
+  }
+  .homepic1, .homepic2 {
+      margin-bottom: 15px;
+  }
+  
+  .resleft {
+      width: 97%;
+      padding: 0px;
+      margin: 10px 0;
+  }
+  .resimg {
+      margin-top: 5px;
+  }
+  
+  .restext {
+      padding: 30px 30px;
+  }
+}
