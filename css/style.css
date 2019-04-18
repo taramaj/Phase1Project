@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.first, .second, .third, .nav, footer {
+.first, .second, .third, .fourth, .last, .nav, footer {
     display: flex;
     flex-wrap: wrap;
     border-collapse: collapse;
@@ -11,8 +11,8 @@
 
 
 
-/*First and Second Page Header*/
-.first, .second, .third {
+/*First, second, third, fourth, last page Header*/
+.first, .second, .third, .fourth, .last {
     height: 500px;
     justify-content: center;
     align-items: center;
@@ -32,7 +32,7 @@
     background-color: rgb(204, 0, 153);
     background-color: rgba(204, 0, 153, 0.8);
     color: #ffffff;
-    text-shadow: 3px 3px #4d0039;
+    text-shadow: 3px 3px 7px #4d0039 ;
     font: bolder 40px 'Roboto', sans-serif;
 }
 
@@ -51,7 +51,7 @@
     background-color: rgb(204, 82, 0);
     background-color: rgba(204, 82, 0, 0.8);
     color: #ffffff;
-    text-shadow: 3px 3px #4d1f00;
+    text-shadow: 3px 3px 7px #4d1f00;
     font: bolder 40px 'Roboto', sans-serif;
 }
 
@@ -60,7 +60,7 @@
 /*Getting Started Header Image*/
 .third {
     background-image: url("../images/greenseedlings.jpg");
-    background-color: green;
+    background-color: #008000;
 }
 
 /*Getting Started h1*/
@@ -70,11 +70,45 @@
     background-color: rgb(179, 134, 0);
     background-color: rgba(179, 134, 0, 0.8);
     color: #ffffff;
-    text-shadow: 3px 3px #4d1f00;
+    text-shadow: 3px 3px 7px #4d1f00;
     font: bolder 40px 'Roboto', sans-serif; 
 }
 
+/*What to Grow Header Image*/
+.fourth {
+    background-image: url("../images/greensanddirt.jpg");
+    background-color: #008000;
+}
 
+/*What to Grow h1*/
+.grow {
+   padding:5px 35px;
+    border: solid #d3d3d3 2px;
+    background-color: rgb(204, 0, 0);
+    background-color: rgba(204, 0, 0, 0.8);
+    color: #ffffff;
+    text-shadow: 3px 3px 7px #4d1f00;
+    font: bolder 40px 'Roboto', sans-serif; 
+}
+
+/*Resources Header Image*/
+.last {
+    background-image: url("../images/whitepinkflowerfield.jpg");
+    background-color: #008000;
+}
+
+/*Resources h1*/
+.resources {
+   padding:5px 60px;
+    border: solid #d3d3d3 2px;
+    background-color: rgb(204, 0, 102);
+    background-color: rgba(204, 0, 102, 0.8);
+    color: #ffffff;
+    text-shadow: 3px 3px 7px #4d1f00;
+    font: bolder 40px 'Roboto', sans-serif; 
+}
+
+/*Navigation Bar - Same on all pages*/
 .nav { 
     list-style-type: none;
     justify-content: space-around;
@@ -93,7 +127,7 @@
     text-decoration: none;
     font: bolder 18px 'Roboto', sans-serif;
     color: #ffffff;
-    text-shadow: 2px 2px #003300;
+    text-shadow: 2px 2px 7px #003300;
     padding: 6px;
 }
 
@@ -108,27 +142,28 @@
 /*Index Pics in a row */
   .homepicscontainer {
       display: flex;
-      /*justify-content: space-between;*/
+      justify-content: space-between;
       border-collapse: collapse;
       /*width: 100%;*/
       padding: 15px;
     } 
     
     .homepic1, .homepic2, .homepic3 {
-        width: 100%;
+        width: 33%;
         height: 333px;
         background-size: cover;
         box-sizing: border-box;
         display: flex;
         align-items: flex-end;
         color: #ffffff;
-        text-shadow: 2px 2px #003300;
+        text-shadow: 2px 2px 7px #003300;
         font: bolder 30px 'Roboto', sans-serif;
          /*font-family: 'Lato', sans-serif;*/
     }
     
     .homepic1 {
         background-image: url("../images/orangeyellowflowers.jpg");
+        /*margin-left: 15px;*/
         margin-right: 15px;
     }
     
@@ -139,6 +174,7 @@
     
     .homepic3 {
         background-image: url("../images/peachtree.jpg");
+        /*margin-right: 15px;*/
     }
     
     .textbeaut, .textspicy, .textsweet {
@@ -156,20 +192,21 @@
     /*History Pics: Right side, Left side */
     .histsec1, .histsec2 {
         display: flex;
+        flex: 1 3 30%;
         flex-direction: column;
         border-collapse: collapse;
         padding: 15px;
     }
     
     .histgal1, .histgal2, .histgal3, .histgal4 {
-        width: 500px;
+        /*width: 500px;*/
         height: 333px;
         background-size: cover;
         box-sizing: border-box;
         display: flex;
         align-items: flex-end;
         color: #ffffff;
-        text-shadow: 2px 2px #003300;
+        text-shadow: 2px 2px 7px #003300;
         font: bolder 30px 'Roboto', sans-serif;
     }
     
@@ -205,6 +242,7 @@
         font-size: 20px;
         font-family: 'Lato', sans-serif;
         padding: 60px 15px;
+        flex: 2 1 30%;
     }
     
     .histcontainer {
@@ -220,20 +258,21 @@
     /*Getting Started Pics: Right side, Left side */
     .startsec1, .startsec2 {
         display: flex;
+        flex: 1 3 30%;
         flex-direction: column;
         border-collapse: collapse;
         padding: 15px;
     }
     
     .startgal1, .startgal2, .startgal3, .startgal4 {
-        width: 500px;
+        /*width: 500px;*/
         height: 333px;
         background-size: cover;
         box-sizing: border-box;
         display: flex;
         align-items: flex-end;
         color: #ffffff;
-        text-shadow: 2px 2px #003300;
+        text-shadow: 2px 2px 7px #003300;
         font: bolder 30px 'Roboto', sans-serif;
     }
     
@@ -269,6 +308,7 @@
         font-size: 20px;
         font-family: 'Lato', sans-serif;
         padding: 60px 15px;
+        flex: 2 1 30%;
     }
     
     .startcontainer {
@@ -282,20 +322,177 @@
     a.startlink {
         text-decoration: none;
         color: #009933;
-        text-shadow: 2px 2px #003300 .5;
+        text-shadow: 1px 1px 0px #003300;
         padding: 3px;
     }
     
     a.startlink:hover {
         color: #ffffff;
-        text-shadow: 2px 2px #003300 .5;
+        /*text-shadow: 1px 1px 2px #404040;*/
         padding: 3px;
         background: rgba(102, 102, 102, .7);
     }
     
     
     
-
+/*What to Grow Pics: Right side, Left side */
+    .growsec1, .growsec2 {
+        display: flex;
+        flex: 1 3 30%;
+        flex-direction: column;
+        border-collapse: collapse;
+        padding: 15px;
+    }
+    
+    .growgal1, .growgal2, .growgal3, .growgal4 {
+        /*width: 500px;*/
+        height: 333px;
+        background-size: cover;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        color: #ffffff;
+        text-shadow: 2px 2px 7px #003300;
+        font: bolder 30px 'Roboto', sans-serif;
+    }
+    
+    .growgal1 {
+        background-image: url("../images/colorfuldaisies.jpeg");
+        margin-bottom: 15px;
+    }
+    
+    .growgal2 {
+        background-image: url("../images/redberry.jpg");
+    }
+    
+    
+    .growgal3 {
+        background-image: url("../images/redpeppergreenherbs.jpg");
+        margin-bottom: 15px;
+    }
+    
+    .growgal4 {
+        background-image: url("../images/carrotshand.jpg");
+    }
+    
+    .textstunning, .textdivine, .textzesty, .textexquisite {
+        width: 100%;
+        color: #ffffff ;
+        background: rgb(102,102,102);
+        background: rgba(102, 102, 102, .8);
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .growtext {
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        padding: 60px 15px;
+        flex: 2 1 30%;
+    }
+    
+    .growcontainer {
+        display: flex;
+        border-collapse: collapse;
+        width: 100%;
+        text-align: left;
+        line-height: 1.8;
+    }
+    
+    /*Need to link ID onto Resources page to specific text*/
+    .inlink {
+        text-decoration: none;
+        color: rgb(204, 0, 102);
+        padding: 3px;
+    }
+    
+    .inlink:hover {
+        color: #ffffff;
+        padding: 3px;
+        background: rgba(204, 0, 102, .7);
+    } 
+    
+    
+    
+    /*Resources Page: Left pic, Right text*/
+    
+    .resimg {
+        /*width: 500px;*/
+        height: 750px;
+        width: 100%;
+        background-size: cover;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        color: #ffffff;
+        text-shadow: 2px 2px 7px #003300;
+        font: bolder 30px 'Roboto', sans-serif;
+        background-image: url("../images/anotherflowerfield.jpg");
+        margin: 15px;
+    }
+    
+    .rescap {
+        width: 100%;
+        color: #ffffff ;
+        background: rgb(102,102,102);
+        background: rgba(102, 102, 102, .8);
+        text-align: center;
+        padding: 10px;
+    }
+    
+    /*Left container with image and caption*/
+    .resleft {
+        display: flex;
+        /*width: 30%;*/
+        flex-direction: column;
+        border-collapse: collapse;
+        padding: 15px;
+        flex: 1 3 30%;
+    }
+    
+    /*Right container with text only*/
+    .restext {
+        /*width: 50%;*/
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        padding: 60px 60px;
+        flex: 2 1 50%;
+    }
+    
+    /*Left and right containers*/
+    .rescontainer {
+        display: flex;
+        justify-content: space-around;
+        border-collapse: collapse;
+        width: 100%;
+        text-align: left;
+        line-height: 1.8;
+    }
+    
+    #res {
+        color: rgb(204, 0, 102);
+    }
+    
+    a.reslinks {
+        text-decoration: none;
+        color: #009933;
+        text-shadow: 1px 1px 0px #003300;
+        padding: 3px;
+    }
+    
+    a.reslinks:hover {
+        color: #ffffff;
+        padding: 3px;
+        background: rgba(204, 0, 102, .7);
+    }
+    
+    /*Alternate hover color of grey*/
+    /*a.reslinks:hover {
+        color: #ffffff;
+        text-shadow: 1px 1px 2px #404040;
+        padding: 3px;
+        background: rgba(102, 102, 102, .7);
+    }*/
 
 
 footer {
@@ -309,12 +506,13 @@ footer a {
     text-decoration: none;
     font: bolder 18px 'Roboto', sans-serif;
     color: #ffffff;
-    text-shadow: 2px 2px #003300;
+    text-shadow: 2px 2px 7px #003300;
     padding: 6px;
 }
 
 footer a:hover {
 	border: 1px solid #ffffff;
+	background: rgba(102, 102, 102);
 	background: rgba(102, 102, 102, .8);
 }
 
