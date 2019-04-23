@@ -379,7 +379,7 @@ footer a {
     
     /*Resources Page: Left pic, Right text*/
     
-    /*Resources heading image*/
+    /*Resources left image*/
     .resimg {
         height: 750px;
         /*width: 100%;*/
@@ -469,7 +469,7 @@ footer a {
   .resleft {
       /*width: 100%;*/
       margin-top: 15px 0;
-      padding-left: 0;
+      padding: 0 15px;
   }
   
   .resimg {}
