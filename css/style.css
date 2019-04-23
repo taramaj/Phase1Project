@@ -381,7 +381,6 @@ footer a {
     
     /*Resources heading image*/
     .resimg {
-        /*width: 500px;*/
         height: 750px;
         /*width: 100%;*/
         background-size: cover;
@@ -392,7 +391,7 @@ footer a {
         text-shadow: 2px 2px 7px #003300;
         font: bolder 30px 'Roboto', sans-serif;
         background-image: url("../images/anotherflowerfield.jpg");
-        margin: 15px;
+        margin: 15px 0;
     }
     
     
@@ -472,7 +471,7 @@ footer a {
   }
   
   .resimg {
-      margin-top: 5px;
+      /*margin-top: 5px;*/
     }
       
   .restext {
