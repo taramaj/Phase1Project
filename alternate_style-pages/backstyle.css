@@ -108,28 +108,13 @@
     font: bolder 40px 'Roboto', sans-serif; 
 }
 
-/*Navigation Bar & Footer - Same on all pages*/
+/*Navigation Bar - Same on all pages*/
 .nav { 
     list-style-type: none;
     justify-content: space-around;
     padding: 8px;
     background-image: url("../images/grass.jpg");
     background-color: #669900;
-}
-
-footer {
-   justify-content: center;
-    padding: 8px;
-    background-image: url("../images/grass.jpg");
-    background-color: #669900; 
-}
-
-footer a {
-    text-decoration: none;
-    font: bolder 18px 'Roboto', sans-serif;
-    color: #ffffff;
-    text-shadow: 2px 2px 7px #003300;
-    padding: 6px;
 }
 
 .nav li {
@@ -146,7 +131,7 @@ footer a {
     padding: 6px;
 }
 
-.nav a:hover, footer a:hover {
+.nav a:hover {
 	border: 1px solid #FFFFFF;
 	background: rgb(102, 102, 102);
 	background: rgba(102, 102, 102, .8);
@@ -154,7 +139,7 @@ footer a {
 
 
 
-/*Homepage Pics arranged in a row */
+/*Index Pics in a row */
   .homepicscontainer {
       display: flex;
       justify-content: space-between;
@@ -163,20 +148,17 @@ footer a {
       padding: 15px;
     } 
     
-    /* Individual Gallery Pics */
-    .homepic1, .homepic2, .homepic3, .histgal1, .histgal2, .histgal3, .histgal4, .startgal1, .startgal2, .startgal3, .startgal4, .growgal1, .growgal2, .growgal3, .growgal4 {
-            height: 333px;
-            background-size: cover;
-            box-sizing: border-box;
-            display: flex;
-            align-items: flex-end;
-            color: #ffffff;
-            text-shadow: 2px 2px 7px #003300;
-            font: bolder 30px 'Roboto', sans-serif;
-    }
-    
     .homepic1, .homepic2, .homepic3 {
         width: 33%;
+        height: 333px;
+        background-size: cover;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        color: #ffffff;
+        text-shadow: 2px 2px 7px #003300;
+        font: bolder 30px 'Roboto', sans-serif;
+         /*font-family: 'Lato', sans-serif;*/
     }
     
     .homepic1 {
@@ -195,19 +177,17 @@ footer a {
         /*margin-right: 15px;*/
     }
     
-    
-    /* Captions for all gallery pictures */
-    .textbeaut, .textspicy, .textsweet, .textdirty, .texthealthy, .textfun, .textnature, .textdig, .texttaste, .textsweet, .textprecious, .textstunning, .textdivine, .textzesty, .textexquisite, .rescap {
-            width: 100%;
-            color: #ffffff ;
-            background: rgb(102,102,102);
-            background: rgba(102, 102, 102, .8);
-            text-align: center;
-            padding: 10px;
+    .textbeaut, .textspicy, .textsweet {
+        width: 100%;
+        color: #ffffff ;
+        background: rgb(102,102,102);
+        background: rgba(102, 102, 102, .8);
+        text-align: center;
+        padding: 10px;
     }
     
     
-    
+
     
     /*History Pics: Right side, Left side */
     .histsec1, .histsec2 {
@@ -218,6 +198,17 @@ footer a {
         padding: 15px;
     }
     
+    .histgal1, .histgal2, .histgal3, .histgal4 {
+        /*width: 500px;*/
+        height: 333px;
+        background-size: cover;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        color: #ffffff;
+        text-shadow: 2px 2px 7px #003300;
+        font: bolder 30px 'Roboto', sans-serif;
+    }
     
     .histgal1 {
         background-image: url("../images/younggirlgardenplot.jpg");
@@ -228,6 +219,7 @@ footer a {
         background-image: url("../images/tomatobowlhand.jpg");
     }
     
+    
     .histgal3 {
         background-image: url("../images/twochildplay.jpg");
         margin-bottom: 15px;
@@ -237,7 +229,14 @@ footer a {
         background-image: url("../images/womanplanting.jpg");
     }
     
-    
+    .textdirty, .texthealthy, .textfun, .textnature {
+        width: 100%;
+        color: #ffffff ;
+        background: rgb(102,102,102);
+        background: rgba(102, 102, 102, .8);
+        text-align: center;
+        padding: 10px;
+    }
     
     .histext {
         font-size: 20px;
@@ -265,6 +264,17 @@ footer a {
         padding: 15px;
     }
     
+    .startgal1, .startgal2, .startgal3, .startgal4 {
+        /*width: 500px;*/
+        height: 333px;
+        background-size: cover;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        color: #ffffff;
+        text-shadow: 2px 2px 7px #003300;
+        font: bolder 30px 'Roboto', sans-serif;
+    }
     
     .startgal1 {
         background-image: url("../images/greenshovelsoil.jpg");
@@ -285,6 +295,14 @@ footer a {
         background-image: url("../images/handsmallflower.jpg");
     }
     
+    .textdig, .texttaste, .textsweet, .textprecious {
+        width: 100%;
+        color: #ffffff ;
+        background: rgb(102,102,102);
+        background: rgba(102, 102, 102, .8);
+        text-align: center;
+        padding: 10px;
+    }
     
     .starttext {
         font-size: 20px;
@@ -326,6 +344,17 @@ footer a {
         padding: 15px;
     }
     
+    .growgal1, .growgal2, .growgal3, .growgal4 {
+        /*width: 500px;*/
+        height: 333px;
+        background-size: cover;
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        color: #ffffff;
+        text-shadow: 2px 2px 7px #003300;
+        font: bolder 30px 'Roboto', sans-serif;
+    }
     
     .growgal1 {
         background-image: url("../images/colorfuldaisies.jpeg");
@@ -346,6 +375,14 @@ footer a {
         background-image: url("../images/carrotshand.jpg");
     }
     
+    .textstunning, .textdivine, .textzesty, .textexquisite {
+        width: 100%;
+        color: #ffffff ;
+        background: rgb(102,102,102);
+        background: rgba(102, 102, 102, .8);
+        text-align: center;
+        padding: 10px;
+    }
     
     .growtext {
         font-size: 20px;
@@ -396,14 +433,14 @@ footer a {
     }
     
     /*Resources heading*/
-    /*.rescap {
+    .rescap {
         width: 100%;
         color: #ffffff ;
         background: rgb(102,102,102);
         background: rgba(102, 102, 102, .8);
         text-align: center;
         padding: 10px;
-    }*/
+    }
     
     /*Left container with image and caption*/
     .resleft {
@@ -459,6 +496,27 @@ footer a {
         background: rgba(102, 102, 102, .7);
     }*/
 
+
+footer {
+    justify-content: center;
+    padding: 8px;
+    background-image: url("../images/grass.jpg");
+    background-color: #669900;
+}
+
+footer a {
+    text-decoration: none;
+    font: bolder 18px 'Roboto', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 7px #003300;
+    padding: 6px;
+}
+
+footer a:hover {
+	border: 1px solid #ffffff;
+	background: rgba(102, 102, 102);
+	background: rgba(102, 102, 102, .8);
+}
 
 
 
