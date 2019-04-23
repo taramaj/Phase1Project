@@ -419,7 +419,7 @@ footer a {
     /*Left and right containers*/
     .rescontainer {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         border-collapse: collapse;
         width: 100%;
         text-align: left;
